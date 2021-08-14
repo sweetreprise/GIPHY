@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(248, 61%, 38%);
+}
+
+h1 {
+    color: hsl(248, 62%, 92%);
+    text-align: center;
+    font-family: Mukta, sans-serif;
+}
+
+#form-control {
+    display: flex;
+    justify-content: center;
+}
+
+#search {
+    margin-right: 0.5em;
+}
+
+#search:focus {
+    outline: none;
+}
+
+#form-control button {
+    font-family: Mukta, sans-serif;
+    color: white;
+    border: 1px solid hsl(247, 61%, 92%);
+    border-radius: 5%;
+    padding: 0.5em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#search-gif {
+    background-color: hsl(247, 68%, 20%);
+    margin-right: 0.5em;
+}
+
+#remove-gif {
+    background-color: brown;
+}
+
+#form-control button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: hsl(247, 72%, 28%);
+    border: 1px solid hsl(247, 72%, 28%);
+}
+
+#container {
+    border-top: 1px solid rgba(225, 222, 247, .2);
+    width: 90%;
+    height: 80%;
+    margin: 2em auto auto auto;
+    overflow: scroll;
+    padding: 0.5em;
+}
+
+#container img {
+    height: 250px;
+    width: 350px;
+    padding: 1em;
+}
