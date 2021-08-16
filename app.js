@@ -7,7 +7,7 @@ async function searchGIF() {
     }
     
     console.log($('#search'));
-    let response = await axios.get('http://api.giphy.com/v1/gifs/random', config);
+    let response = await axios.get('https://api.giphy.com/v1/gifs/random', config);
     renderGIFs(response.data.data.image_url)
 }
 
