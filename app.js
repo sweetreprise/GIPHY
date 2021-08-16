@@ -5,8 +5,6 @@ async function searchGIF() {
             api_key: "6qahPjYEe2wyuH4XR1tIe8864MhnLuhJ"
         }
     }
-    
-    console.log($('#search'));
     let response = await axios.get('https://api.giphy.com/v1/gifs/random', config);
     renderGIFs(response.data.data.image_url)
 }
